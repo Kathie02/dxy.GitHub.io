@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="01.css">
+</head>
+<body>
+	<p>一、CSS选择器有哪些？</p>
+	<h1>1、内联样式</h1>
+	<h2>2、ID选择器</h2>
+	<h3>3、类，伪类和属性选择器</h3>
+	<h4>4、类型选择器和伪元素选择器</h4>
+	<h5>5、通配符、子选择器、相邻选择器等</h5>
+	<p>二、如何让div在页面中水平和垂直都居中？</p>
+	<p>要让DIV水平和垂直居中，必需知道该DIV得宽度和高度，然后设置位置为绝对位置，距离页面窗口左边框和上边框的距离设置为50%，这个50%就是指页面窗口的宽度和高度的50%，最后将该DIV分别左移和上移，左移和上移的大小就是该DIV宽度和高度的一半。</p>
+	<div class="div_center">
+		<div class="title">二 DIV如何在页面中水平垂直居中</div>
+		<button onclick="close1()">隐藏DIV</button>
+		<button onclick="open1()">显示DIV</button>
+		<div class="center" id="hide">DIV</div>
+	</div>
+	<table border="1px" align="center" cellspacing="0" width="1000px">
+				<tr>
+					<th>数据类型</th>
+					<th>私有属性</th>
+				</tr>
+				<tr>
+					<td rowspan="9">数组数组类型</td>
+					<td>push（）：向背面的末尾添加新的元素</td>
+				</tr>
+				<tr><td>concat（）：合并两个整数或个数组</td></tr>
+				<tr><td>pop（）：删除副本的最后一个元素
+				</td></tr>
+				<tr><td>reverse（）：反转整数
+				</td></tr>
+				<tr><td>sort（）：字母顺序排列的
+					sort（function（a，b）{return ab}）：数字逆序排列
+					sort（function（a，b）{return ba}）：数字逆序排列数组</td></tr>
+				<tr><td>slice（）：选择数组中的第到y个元素</td></tr>
+				<tr><td>splice（）：在数组中指定位置添加新的元素</td></tr>
+				<tr><td>unshift（）：在开头添加新元素</td></tr>
+				<tr><td>shift（）：删除副本的第一个元素</td></tr>
+				<tr>
+					<td rowspan="2">数字类型</td>
+					<td>toFixed（）：把数字转换为字符串，结果的小数点后有指定位数的数字</td>
+				</tr>
+				<tr>
+					<td>toPrecision（）：把数字格式化为指定的长度</td>
+				</tr>
+				<tr>
+					<td rowspan="10">字符串类型</td>
+					<td>charAt（）：返回指定位置的字符</td>
+				</tr>
+				<tr>
+					<td>concat（）：连接两个串口或多个串口</td>
+				</tr>
+				<tr>
+					<td>match（）：查找找到一个或多个正则表达式的匹配</td>
+				</tr>
+				<tr>
+					<td>replace（）：在字符串中查找匹配的子串，并替换与正则表达式匹配的子串</td>
+				</tr>
+				<tr>
+					<td>slice（）：提取字符串的长度，并在新的字符串中返回被提取的部分</td>
+				</tr>
+				<tr>
+					<td>split（）：把字符串分割为字符串分割</td>
+				</tr>
+				<tr>
+					<td>toLowerCase（）：把字符串转换为小写</td>
+				</tr>
+				<tr>
+					<td>toUpperCase（）：把字符串转换为大写</td>
+				</tr>
+				<tr>
+					<td>trim（）：去除字符串两边的空白</td>
+				</tr>
+				<tr>
+					<td>toString（）：返回一个字符串</td>
+				</tr>
+				<tr>
+					<td rowspan="5">日期日期与时间类型</td>
+					<td>getFullYear（）：从日期对象以四位数字返回年份</td>
+				</tr>
+				<tr><td>getDay（）：从日期对象返回一周中的某些天（0〜6）</td></tr>
+				<tr><td>getDate（）：从Date对象返回一个月中的某个天（1〜31）</td></tr>
+				<tr><td>getTime（）：返回1970年1月1日至今的毫秒数</td></tr>
+				<tr><td>toUTCString（）：把日期对象的日期部分转换为字符串</td></tr>
+				<tr>
+					<td rowspan="5">round（）：对一个数字四舍五入
+						</td>
+				</tr>
+				<tr>
+					<td>random（）：返回0-1之间的一个随机数
+						</td>
+				</tr>
+				<tr>
+					<td>random（）* x：返回0-x之间的一个随机数
+						</td>
+				</tr>
+				<tr>
+					<td>max（）：返回给定数中最大的数
+						</td>
+				</tr>
+				<tr><td>min（）：返回给定数中最小的数</td></tr>
+				<tr>
+					<td rowspan="5">RegExp正则表达式类型
+						</td>
+				</tr>
+				<tr><td>/搜索内容/ i：不区分大小写匹配</td></tr>
+				<tr>
+					<td>/搜索内容/ g：全文搜索，找到所有匹配内容
+						</td>
+				</tr>
+				<tr>
+					<td>test（）：搜索字符串指定的值，根据结果并返回真或假
+						</td>
+				</tr>
+				<tr>
+					<td>exec（）：检索字符串中的指定值，返回值是被找到的值，如果没有发现匹配，则返回null</td>
+				</tr>
+				
+
+
+			</table>
+			<div>四、js获取DOM元素有哪些方法？</div>
+			<p class="text">
+				1、通过ID获取（getElementById）<br>
+2、通过name属性（getElementsByName）<br>3、通过标签名（getElementsByTagName）<br>
+4、通过类名（getElementsByClassName）<br>5、获取html的方法（document.documentElement）<br>6、获取body的方法（document.body）<br>7、通过选择器获取一个元素（querySelector）<br>8、通过选择器获取一组元素（querySelectorAll）
+			</p>
+			<!-- 在页面中创建一个div（500px*500px） 和 Input； 实时获取Input输入的值展示在div中；
+		【如果input输入值长度大于3就使div的背景颜色变为红色】。（onchange   innerText   length） -->
+	<div class="div_input paragraph">
+		<div class="title">
+			五 在页面中创建一个div（500px*500px） 和 Input； <br>
+			实时获取Input输入的值展示在div中；<br>
+			【如果input输入值长度大于3就使div的背景颜色变为红色】</div>
+		<input type="text" value="请输入内容：" id="shuru"
+		 onchange="on_change()" onfocus="on_focus()">
+		<div id="shuchu"></div>
+	</div>
+		  
+</body>
+<script>
+DIV = document.getElementById('hide')
+		function close1() {
+			DIV.style.visibility = 'hidden'
+		}
+		function open1() {
+			DIV.style.visibility = 'visible'
+		}
+		var x = document.getElementById('shuru')
+		var y = document.getElementById('shuchu')
+		function on_focus() {
+			x.value = ""
+		}
+		// 在页面中创建一个div（500px*500px） 和 Input；...
+		function on_change() {
+			y.innerHTML = x.value
+			if (y.innerHTML.length > 3) {
+				y.style.background = "red"
+			}
+			else{
+				y.style.background = "#000"
+			}
+		}
+</script>
+</html>
